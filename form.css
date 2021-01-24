@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:400, 500, 700');
+
+/* Bootstrap Padding Fix */
+[class*="col-"]{
+  padding: 1rem;
+}
+
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #222;
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #5993c2;
+}
+
+/* navbar */
+.navbar{
+  padding: .8rem;
+}
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+.padding{
+  padding-bottom: 2rem;
+}
+
+.team{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 8rem;
+  color: #fff
+}
+.team hr{
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+}
+
+/* media queries */
+@media (max-width: 992px){
+  .social a{
+    font-size: 2em;
+    padding: 1rem;
+  }
+}
+@media (max-width: 768px){
+  .display-4{
+    font-size: 200%;
+  }
+}
+
+.hero{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.form-box{
+  width: 60%;
+  height: 700px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+.button-box{
+  width: 70%;
+  margin: 35px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+.toggle-btn{
+  width: 30%;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  position: relative;
+}
+.toggle-btn:focus{
+  outline: none;
+}
+.button-box input[type="radio"]{
+  height: auto;
+  width: 30%;
+  -webkit-appearance: none;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12);
+  border: 1px solid #ececec;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button-box .member:after{
+  content: 'Member';
+  padding: 10px;
+  font-size: 1.5vw;
+  color: #7a7a7a;
+}
+.button-box .sponsor:after{
+  content: 'Partner/Sponsor';
+  font-size: 1.5vw;
+  color: #7a7a7a;
+}
+.button-box .exec:after{
+  content: 'Executive';
+  font-size: 1.5vw;
+  color: #7a7a7a;
+}
+.button-box .member:checked{
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12),
+  inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+  inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.button-box .member:checked:after{
+  color: #14e38a;
+}
+.button-box .sponsor:checked{
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12),
+  inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+  inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.button-box .sponsor:checked:after{
+  color: #14e38a;
+}
+.button-box .exec:checked{
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12),
+  inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+  inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.button-box .exec:checked:after{
+  color: #14e38a;
+}
+.input-group{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn{
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #26a1f3,#00eba49f);
+  border: 0;
+  outline: none;
+}
+.radio-box{
+  display:flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+#sponsor_form input[type="radio"]{
+  height: auto;
+  width: 30%;
+  -webkit-appearance: none;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12);
+  border: 1px solid #ececec;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#sponsor_form .radio.sponsor:after{
+  content: 'Sponsor';
+  padding: 10px;
+  font-size: 1.5vw;
+  color: #7a7a7a;
+}
+#sponsor_form .radio.partner:after{
+  content: 'Partner';
+  padding: 10px;
+  font-size: 1.5vw;
+  color: #7a7a7a;
+}
+#sponsor_form .radio.sponsor:checked{
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12),
+  inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+  inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+#sponsor_form .radio.sponsor:checked:after{
+  color: #14e38a;
+}
+#sponsor_form .radio.partner:checked{
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12),
+  inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+  inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+#sponsor_form .radio.partner:checked:after{
+  color: #14e38a;
+}
+#member_form{
+  top: 35%;
+  width: 50%;
+  margin-left: 23%;
+}
+#sponsor_form{
+  top: 200%;
+  width: 50%;
+  margin-left: 23%;
+}
+#exec_form{
+  top: 800px;
+  width: 50%;
+  margin-left: 23%;
+}
+
+@media screen and (max-width: 950px){
+  .button-box{
+    flex-direction: column;
+  }
+  .button-box input[type="radio"]{
+    width: 100%;
+  }
+  .button-box .member:after{
+    content: 'Member';
+    font-size: 3vw;
+    color: #7a7a7a;
+  }
+  .button-box .sponsor:after{
+    content: 'Partner/Sponsor';
+    padding: 10px;
+    font-size: 3vw;
+    color: #7a7a7a;
+  }
+  .button-box .exec:after{
+    content: 'Executive';
+    padding: 10px;
+    font-size: 3vw;
+    color: #7a7a7a;
+  }
+  .radio-box{
+    flex-direction: column;
+  }
+  #sponsor_form input[type="radio"]{
+    width: 100%;
+    margin-top: 20px;
+  }
+  #sponsor_form .radio.sponsor:after{
+    content: 'Sponsor';
+    padding: 10px;
+    font-size: 3vw;
+    color: #7a7a7a;
+  }
+  #sponsor_form .radio.partner:after{
+    content: 'Partner';
+    padding: 10px;
+    font-size: 3vw;
+    color: #7a7a7a;
+  }
+}
+/* social icon hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.social a{
+  font-size: 2em;
+  padding: 1rem;
+}
+/* facebook icon css*/
+.fa-facebook {
+  color: #3B5998;
+}
+
+/*instagram icon css*/
+.fa-instagram{
+  color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/*Linkedin Icon css */
+.fa-linkedin {
+  color: #007bb5;
+}
+
+/*footer*/
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}

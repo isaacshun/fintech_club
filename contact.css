@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:400, 500, 700');
+
+/* Bootstrap Padding Fix */
+[class*="col-"]{
+  padding: 1rem;
+}
+
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #5993c2;
+}
+
+/* navbar */
+.navbar{
+  padding: .8rem;
+}
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+.padding{
+  padding-bottom: 2rem;
+}
+.main_page{
+  color: Black;
+  font-family: Helvetica;
+  text-align: center;
+  padding: 200px;
+  font-weight: bold;
+  background-image:url('fintech.jpg');
+}
+.main_par{
+  padding: 20px;
+}
+
+.team{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+.team hr{
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+}
+
+/* contact form */
+.contact-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form{
+  width: 1150px;
+  height: 550px;
+  padding: 50px 80px;
+  background: url();
+  box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  transition: .5s all ease;
+}
+.contact-form .form-area h2{
+  font-weight: 500;
+  font-size: 28px; color: #4f4f4f;
+  text-align: center;
+  transition: .5s all ease;
+}
+.contact-form .form-area p{
+  max-width: 340px;
+  text-align: center;
+  color: #464646;
+  margin: auto;
+}
+.contact-form .contact{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s all ease;
+}
+.contact-form .contact{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s all ease;
+}
+.contact-form .contact form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .contact .map{
+  width: 400px;
+  margin-right: 35px;
+  animation-delay: 1.5s;
+}
+.contact-form .contact .map iframe{
+  width: 100%;
+  height: 300px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.contact-form .contact .form{
+  width: 525px;
+  transition: .5s all ease;
+  animation-duration: 1.5s
+}
+.contact-form .contact .form input,
+.contact-form .contact .form textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  transition: .3s;
+}
+.contact-form .contact .form input:focus,
+.contact-form .contact .form textarea:focus{
+  border: 1px;
+  box-shadow: inset 1px 1px 0 #4285f4,
+  inset -1px -1px 0 #4285f4;
+}
+.contact-form .contact .form textarea{
+  height: 90px;
+  max-width: 100%;
+}
+.contact-form .contact .form .submit-area{
+  position: relative;
+}
+.contact-form .contact .form .submit-area #submit{
+  display: inline-block;
+  width: 105px;
+  padding: 10px 20px;
+  border-radius: 1px;
+  cursor: pointer;
+  background-color: #33b5e5;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  transition: .1s all ease;
+}
+.contact-form .contact .form .submit-area #submit:hover{
+  box-shadow: 0 7px 15px rgba(0, 0, 0, .25);
+}
+/* media query */
+@media screen and (max-width: 1200px){
+  .contact-form{
+    width: 960px;
+    padding: 50px 60px;
+  }
+  .contact-form .contact .map{
+    width: 320px;
+  }
+  .contact-form .contact .form{
+    width: 485px;
+  }
+}
+@media screen and (max-width: 992px){
+  .contact-form{
+    width: 710px;
+    height: auto;
+  }
+  .contact-form .contact .map{
+    width: 100%;
+  }
+  .contact-form .contact .form{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 900px){
+  .contact-form{
+    width: 100%;
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .contact .map{
+    margin-bottom: 20px;
+  }
+  .contact-form .contact .map{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.contact-form .contact .form .label{
+  background-color: #fff;
+  color: #6b6b6b;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0 10px;
+  padding: 0 10px;
+  position: absolute;
+  transition: .5s all cubic-bezier(0.5, 1.35, 0.5, 1.35);
+}
+.contact-form .contact .form .name-text{
+  transform: translateY(-47px)
+}
+.contact-form .contact .form .email-text{
+  transform: translateY(-47px)
+}
+.contact-form .contact .form .message-text{
+  transform: translateY(-100px)
+}
+.contact-form .contact .form input:focus + .label,
+.contact-form .contact .form input:valid + .label,
+.contact-form .contact .form textarea:focus + .label,
+.contact-form .contact .form textarea:valid + .label{
+  font-size: 13px;
+  font-weight: 600;
+  color: #4285f4;
+}
+.contact-form .contact .form input:focus + .name-text,
+.contact-form .contact .form input:valid + .name-text{
+  transform: translateY(-67px);
+}
+.contact-form .contact .form input:focus + .email-text,
+.contact-form .contact .form input:valid + .email-text{
+  transform: translateY(-67px);
+}
+.contact-form .contact .form textarea:focus + .message-text,
+.contact-form .contact .form textarea:valid + .message-text{
+  transform: translateY(-117px);
+}
+/*footer*/
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+body{
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 30rem;
+  font-family: Helvetica;
+}
+
+.footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem;
+  background-color: #efefef;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+/* social icon hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.social a{
+  font-size: 2em;
+  padding: 1rem;
+}
+/* facebook icon css*/
+.fa-facebook {
+  color: #3B5998;
+}
+
+/*instagram icon css*/
+.fa-instagram{
+  color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/*Linkedin Icon css */
+.fa-linkedin {
+  color: #007bb5;
+}
